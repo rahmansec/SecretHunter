@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Slack Token",
+    "regex": "(xox[pborsa]-[0-9]{12}-[0-9]{12}-[0-9]{12}-[a-z0-9]{30})",
+    "confidence": "high"
+  },
+  {
+    "name": "Slack Webhook",
+    "regex": "https://(hooks|hooks2)\\.slack\\.com/services/[A-Za-z0-9_\\-]+/[A-Za-z0-9_\\-]+/[A-Za-z0-9_\\-]+",
+    "confidence": "high"
+  },
+  {
+    "name": "Discord Webhook",
+    "regex": "https://discord(app)?\\.com/api/webhooks/[A-Za-z0-9_\\-]+/[A-Za-z0-9_\\-]+",
+    "confidence": "high"
+  },
+  {
+    "name": "Telegram Bot Token",
+    "regex": "[0-9]{9}:[A-Za-z0-9_-]{35}",
+    "confidence": "high"
+  },
+  {
+    "name": "GitHub Token",
+    "regex": "gh[pous]_[a-zA-Z0-9]{36}",
+    "confidence": "high"
+  },
+  {
+    "name": "GitLab Personal Access Token",
+    "regex": "glpat-[A-Za-z0-9_-]{20}",
+    "confidence": "high"
+  },
+  {
+    "name": "Bitbucket App Password",
+    "regex": "bbp_[A-Za-z0-9]{24}",
+    "confidence": "high"
+  },
+  {
+    "name": "AWS Access Key ID",
+    "regex": "AKIA[0-9A-Z]{16}",
+    "confidence": "high"
+  },
+  {
+    "name": "AWS Secret Access Key",
+    "regex": "(?i)aws(.{0,20})?(?-i)secret(.{0,20})?(?-i)key(.{0,10})?([A-Za-z0-9/+=]{40,})",
+    "confidence": "high"
+  },
+  {
+    "name": "Google API Key",
+    "regex": "AIza[0-9A-Za-z-_]{35}",
+    "confidence": "high"
+  },
+  {
+    "name": "OpenAI API Key",
+    "regex": "sk-[A-Za-z0-9]{48}",
+    "confidence": "high"
+  },
+  {
+    "name": "Stripe Secret Key",
+    "regex": "sk_live_[0-9a-zA-Z]{24}",
+    "confidence": "high"
+  },
+  {
+    "name": "Stripe Publishable Key",
+    "regex": "pk_live_[0-9a-zA-Z]{24}",
+    "confidence": "high"
+  },
+  {
+    "name": "SendGrid API Key",
+    "regex": "SG\\.[A-Za-z0-9_\\-]{66}",
+    "confidence": "high"
+  },
+  {
+    "name": "Mailgun Private API Key",
+    "regex": "key-[0-9a-zA-Z]{32}",
+    "confidence": "high"
+  },
+  {
+    "name": "Twilio Auth Token",
+    "regex": "[a-f0-9]{32}",
+    "confidence": "high"
+  },
+  {
+    "name": "JWT",
+    "regex": "eyJ[A-Za-z0-9_\\-]+\\.[A-Za-z0-9_\\-]+\\.[A-Za-z0-9_\\-]+",
+    "confidence": "high"
+  },
+  {
+    "name": "SSH Private Key",
+    "regex": "-----BEGIN (?:RSA|DSA|EC|OPENSSH) PRIVATE KEY-----[\\s\\S]+?-----END (?:RSA|DSA|EC|OPENSSH) PRIVATE KEY-----",
+    "confidence": "high"
+  },
+  {
+    "name": "Credit Card Number",
+    "regex": "\\b(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|3[47][0-9]{13}|6(?:011|5[0-9]{2})[0-9]{12})\\b",
+    "confidence": "high"
+  },
+  {
+    "name": "IBAN",
+    "regex": "[A-Z]{2}[0-9]{2}[A-Z0-9]{11,30}",
+    "confidence": "high"
+  },
+  {
+    "name": "Generic API Key or Token",
+    "regex": "(api[_-]?key|token|auth|secret)[\"'\\s:=>]{1,10}[^\"'\\s]+",
+    "confidence": "medium"
+  }
+]
