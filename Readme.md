@@ -32,7 +32,7 @@ A high-performance tool for **bug bounty hunters** and **security researchers** 
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/secret-hunter.git
+git clone https://github.com/rahmansec/SecretHunter.git
 cd secret-hunter
 ```
 
